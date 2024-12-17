@@ -8,5 +8,6 @@ export const axeConfig = {
         'html-has-lang': { enabled: true },
         'valid-lang': { enabled: true },
         'aria-roles': { enabled: true }
-    }
+    },
+    tags: ['wcag2a', 'wcag2aa']
 };

@@ -1,0 +1,119 @@
+{
+  "url": "https://www.blogger.com/about/?hl=es",
+  "timestamp": "2024-12-17T06:24:54.998Z",
+  "summary": {
+    "total": 4,
+    "critical": 2,
+    "serious": 2,
+    "moderate": 0,
+    "minor": 0
+  },
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=webdriverio",
+      "nodes": [
+        {
+          "html": "<span>Iniciar sesión</span>",
+          "target": [
+            ".sign-in > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.13 (foreground color: #ffffff, background color: #4583aa, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>Crea un blog atractivo y original fácilmente.</p>",
+          "target": [
+            ".hero--header > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.13 (foreground color: #ffffff, background color: #4583aa, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/go/createyourblog?hl=es\" class=\"cta ga-hero-cta\">Crea tu blog</a>",
+          "target": [
+            ".ga-hero-cta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.51 (foreground color: #ffffff, background color: #ff8000, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<h2>Elige el diseño perfecto</h2>",
+          "target": [
+            "#choose-design > header > div > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.51 (foreground color: #ffffff, background color: #ff8000, font size: 27.0pt (36px), font weight: normal). Expected contrast ratio of 3:1"
+        },
+        {
+          "html": "<p>Crea un blog atractivo y adaptado a tu estilo. Puedes elegir entre una selección de plantillas fáciles de usar, con diseños flexibles y montones de imágenes de fondo, o bien diseñar un blog totalmente nuevo.</p>",
+          "target": [
+            "#choose-design > header > div > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.51 (foreground color: #ffffff, background color: #ff8000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>Sácale rendimiento a tu esfuerzo. Google AdSense puede mostrar automáticamente en tu blog anuncios relevantes orientados a tus lectores: así obtienes ingresos mientras escribes sobre lo que te apasiona.</p>",
+          "target": [
+            ".earn-money > header > div > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.96 (foreground color: #ffffff, background color: #388d80, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=webdriverio",
+      "nodes": [
+        {
+          "html": "<a href=\"/go/home?hl=es\" class=\"ga-header-logo\">",
+          "target": [
+            ".ga-header-logo"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"scrolldown js-scroll-to\" href=\"#choose-design\">\n    <svg class=\"icon icon-arrow-down\"><use xlink:href=\"#icon-arrow-down\"></use></svg>\n  </a>",
+          "target": [
+            ".scrolldown"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "meta-viewport",
+      "impact": "critical",
+      "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+      "help": "Zooming and scaling must not be disabled",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/meta-viewport?application=webdriverio",
+      "nodes": [
+        {
+          "html": "<meta content=\"width=device-width, initial-scale=1.0, user-scalable=no\" name=\"viewport\">",
+          "target": [
+            "meta[name=\"viewport\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices"
+        }
+      ]
+    },
+    {
+      "id": "select-name",
+      "impact": "critical",
+      "description": "Ensure select element has an accessible name",
+      "help": "Select element must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/select-name?application=webdriverio",
+      "nodes": [
+        {
+          "html": "<select name=\"\" class=\"js-language-switch ga-language-switch language-switch\" id=\"language-switch\">",
+          "target": [
+            "#language-switch"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    }
+  ]
+}
