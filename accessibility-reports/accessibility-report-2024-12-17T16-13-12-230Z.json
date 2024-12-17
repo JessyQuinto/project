@@ -1,0 +1,12 @@
+{
+  "url": "https://www.google.com/",
+  "timestamp": "2024-12-17T16:13:48.924Z",
+  "summary": {
+    "total": 0,
+    "critical": 0,
+    "serious": 0,
+    "moderate": 0,
+    "minor": 0
+  },
+  "violations": []
+}
